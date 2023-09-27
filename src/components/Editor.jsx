@@ -125,7 +125,7 @@ export default function Editor({ edit, data }) {
 
         // Make a POST request to your server using Axios
         const response = await axios.post(
-          "http://localhost:4004/blogs/uploads",
+          `${BASE_URL}/blogs/uploads`,
           formData
         );
         console.log(response);
